@@ -1,66 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 header {
   height: 5vh;
-  background: #3C3A39;
+  background: #3c3a39;
   display: flex;
   justify-content: space-between;
   color: white;
   padding: 0 2%;
 }
+
 h1 {
-    width: 327px;
-    height: 124px;
-    
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    /* or 114% */
-    
-    letter-spacing: 0.37px;
-    
-    /* Theme 3 / Primary 1 */
-    
-    color: #FF6B00;
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+
+  /* or 114% */
+
+  letter-spacing: 0.37px;
+
+  /* Theme 3 / Primary 1 */
+
+  color: #ff6b00;
 }
 
 h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
-    color: #FFF5E1;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
 }
+
 .head-item {
   align-self: center;
 }
+
 .down {
   margin-top: 5vh;
 }
-.container{
+
+.container {
   padding: 25% 10%;
   display: flex;
 }
+
 .icon {
   margin: 5px;
 }
+
 .column {
   flex-direction: column;
 }
+
 .black-bg {
-  background: #1C1A19;
+  background: #1c1a19;
 }
 
 .wht {
-  color: #FFFFFF;
+  color: #fff;
 }
+
 .right {
   width: 100%;
   display: flex;
@@ -71,26 +80,29 @@ h3 {
 }
 
 .texto1 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #fff;
 }
+
 #logo-container {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   align-self: center;
 }
+
 #menu-button {
-  background: #3C3A39;
+  background: #3c3a39;
   border-radius: 5px;
   border-style: none;
 }
+
 #menu-div {
   display: flex;
   flex-direction: column;
@@ -99,7 +111,8 @@ h3 {
   height: 50px;
   padding: 5px;
 }
+
 /*
 #headline {
   height: 95vh;
-}*/
+} */
