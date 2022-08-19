@@ -9,22 +9,23 @@ header {
   height: 5vh;
   background: #3c3a39;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   color: white;
   padding: 0 2%;
 }
 
 ul {
-    display: flex   ;
+  display: flex;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
