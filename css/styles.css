@@ -6,9 +6,11 @@
 }
 
 header {
+  align-items: center;
   height: 5vh;
+  width: 96%;
   background: #3c3a39;
-  display: flex;
+  display: block;
   position: fixed;
   justify-content: space-between;
   color: white;
