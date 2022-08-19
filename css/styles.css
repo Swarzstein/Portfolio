@@ -14,6 +14,19 @@ header {
   padding: 0 2%;
 }
 
+ul {
+    display: flex   ;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 h1 {
   width: 327px;
   height: 124px;
