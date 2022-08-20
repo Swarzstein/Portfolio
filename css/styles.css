@@ -10,7 +10,7 @@ header {
   height: 5vh;
   width: 96%;
   background: #3c3a39;
-  display: block;
+  display:  flex;
   position: fixed;
   justify-content: space-between;
   color: white;
