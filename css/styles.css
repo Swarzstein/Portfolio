@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400&family=Inter:wght@500&display=swap');
 
 * {
   margin: 0;
@@ -30,6 +30,165 @@ a {
   color: white;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+hr {
+  width: 90%;
+}
+
+.head-item {
+  align-self: center;
+}
+
+.down {
+  margin-top: 5vh;
+}
+
+.bg-img-1 {
+  background-image: url(../img/placeholder2.png);
+}
+
+.black-bg {
+  background: #1c1a19;
+}
+
+.btn-group {
+  padding: 10px 0;
+
+}
+
+.card {
+  display: flex;
+  margin: 30px 20px;
+  height: 460px;
+}
+
+.card-content {
+  padding: 3% 4%;
+  padding-top: 50px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.container {
+  padding: 25% 10%;
+  display: flex;
+}
+
+.dark-txt {
+  color: #1C1A19;
+}
+
+.divider {
+  height: 1px;
+  width: 90%;
+  background-color: #3c3a39;
+  display: inline-block;
+}
+
+.fill-h {
+  width: 100%;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.h-center {
+  text-align: center;
+  justify-items: center;
+  height: max-content;
+}
+
+.h-left {
+  text-align: left;
+}
+
+.icon {
+  margin: 5px;
+}
+
+.link-btn {
+  padding: 12px;
+  gap: 10px;
+  height: 48px;
+  background-color: #ff6b00;
+  border-style: none;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  /* Theme 2 / Neutral 11 */
+
+  color: #FFFFFF;
+}
+
+.main-container {
+  display: grid;
+}
+
+.p-lang {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #8993A4;
+  margin-right: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+/* identical to box height, or 133% */
+
+
+/* Neutrals/N900 */
+
+color: #091E42;
+}
+
+.p-lang-2 {
+  box-sizing: border-box;
+  padding: 10px 12px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.24);
+  border: 1px solid #8993A4;
+  margin-right: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+/* identical to box height, or 133% */
+
+
+/* Neutrals/N900 */
+
+color: #fff;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: end;
+  margin-top: 40%;
+  z-index: 0;
+}
+
 .tema-1-1 {
   width: 327px;
   height: 124px;
@@ -59,68 +218,32 @@ a {
   color: #1C1A19;
 }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
+.tema-2 {
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
-  color: #fff5e1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-hr {
-  width: 90%;
+.title-post {
+  padding-top: 50px;
+  align-self: flex-start;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091E42;
 }
-
-.head-item {
-  align-self: center;
-}
-
-.down {
-  margin-top: 5vh;
-}
-
-.card {
-  display: flex;
-}
-
-.h-center {
-  text-align: center;
-  justify-items: center;
-}
-
-.container {
-  padding: 25% 10%;
-  display: flex;
-}
-
-.icon {
-  margin: 5px;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.black-bg {
-  background: #1c1a19;
-}
-
-.main-container {
-  display: grid;
-}
-
-.wht {
-  color: #fff;
-}
-
-.right {
-  width: 100%;
-  display: flex;
-  position: absolute;
-  justify-content: end;
-  margin-top: 40%;
-  z-index: 0;
+.title-post-2 {
+  text-align: left;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
 }
 
 .texto1 {
@@ -132,11 +255,8 @@ hr {
   color: #fff;
 }
 
-.divider {
-  height: 1px;
-  width: 90%;
-  background-color: #3c3a39;
-  display: inline-block;
+.wht {
+  color: #fff;
 }
 
 #logo-container {
