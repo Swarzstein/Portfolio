@@ -10,7 +10,7 @@ header {
   height: 5vh;
   width: 96%;
   background: #3c3a39;
-  display:  flex;
+  display: flex;
   position: fixed;
   justify-content: space-between;
   color: white;
@@ -52,13 +52,14 @@ hr {
 }
 
 .ab-title {
-  font-family: 'InaiMathi',sans-serif;
+  font-family: 'InaiMathi', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
-  color: #FFFFFF;
+  color: #fff;
   margin: 10px;
 }
 
@@ -68,8 +69,9 @@ hr {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
+
   /* or 194% */
-  color: #FFFFFF;
+  color: #fff;
   margin: 10px 0;
 }
 
@@ -117,6 +119,7 @@ hr {
   display: flex;
   flex-direction: column;
 }
+
 .col-center {
   display: flex;
   flex-direction: column;
@@ -134,7 +137,7 @@ hr {
 }
 
 .dark-txt {
-  color: #1C1A19;
+  color: #1C1a19;
 }
 
 .divider {
@@ -188,8 +191,7 @@ hr {
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
-  
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -198,7 +200,7 @@ hr {
 
   /* Theme 2 / Neutral 11 */
 
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .main-container {
@@ -211,19 +213,19 @@ hr {
   padding: 10px 12px;
   height: 40px;
   background: #fff;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   margin-right: 10px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-/* identical to box height, or 133% */
+  
+  /* identical to box height, or 133% */
 
+  /* Neutrals/N900 */
 
-/* Neutrals/N900 */
-
-  color: #091E42;
+  color: #091e42;
 }
 
 .p-lang-2 {
@@ -231,14 +233,15 @@ hr {
   padding: 10px 12px;
   height: 40px;
   background: rgba(255, 255, 255, 0.24);
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   margin-right: 10px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-/* identical to box height, or 133% */
+
+  /* identical to box height, or 133% */
 
   color: #fff;
 }
@@ -257,11 +260,11 @@ hr {
 
   width: 18px;
   height: 18px;
+
   /* Theme 3 / Primary 1 */
 
   background: #ff6b00;
   transform: rotate(-45deg);
-
   align-self: center;
 }
 
@@ -314,7 +317,7 @@ hr {
 }
 
 .tema-2 {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -338,8 +341,9 @@ hr {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #091E42;
+  color: #091e42;
 }
+
 .title-post-2 {
   text-align: left;
   font-family: 'Crete Round', sans-serif;
@@ -354,7 +358,6 @@ hr {
 .top-space {
   padding-top: 200px;
 }
-
 
 .wht {
   color: #fff;
