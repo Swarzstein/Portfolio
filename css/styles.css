@@ -61,18 +61,23 @@ hr {
 
 .btn-group {
   padding: 10px 0;
-
+  align-self: flex-start;
 }
 
 .card {
   display: flex;
-  margin: 30px 20px;
-  height: 460px;
+  margin: 0 20px;
+  align-items: flex-end;
 }
 
 .card-content {
   padding: 3% 4%;
   padding-top: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
 }
 
 .column {
@@ -89,10 +94,11 @@ hr {
 }
 
 .divider {
-  height: 1px;
   width: 90%;
-  background-color: #3c3a39;
+  border: 1px solid #212121;
   display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .fill-h {
@@ -101,12 +107,14 @@ hr {
 
 .fit {
   width: fit-content;
+  align-self: flex-start;
 }
 
 .h-center {
   text-align: center;
   justify-items: center;
   height: max-content;
+  padding-bottom: 130px;
 }
 
 .h-left {
@@ -138,6 +146,7 @@ hr {
 
 .main-container {
   display: grid;
+  grid-gap: 30px;
 }
 
 .p-lang {
@@ -216,6 +225,7 @@ color: #fff;
 
   /* Theme 3 / Neutral 1 */
   color: #1C1A19;
+  margin-top: 100px;
 }
 
 .tema-2 {
@@ -244,6 +254,7 @@ color: #fff;
   font-size: 32px;
   line-height: 44px;
   color: #FFFFFF;
+  margin-bottom: 5px;
 }
 
 .texto1 {
