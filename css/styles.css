@@ -220,9 +220,9 @@ hr {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  /* identical to box height, or 133% */
 
-  /* Neutrals/N900 */
+  /* --identical to box height, or 133%--
+  --Neutrals/N900-- */
 
   color: #091e42;
 }
@@ -311,7 +311,7 @@ hr {
   line-height: 52px;
 
   /* Theme 3 / Neutral 1 */
-  color: #1C1a19;
+  color: #1c1a19;
   margin-top: 100px;
 }
 
