@@ -267,12 +267,20 @@ hr {
   align-self: center;
 }
 
+.row-center {
+  justify-content: center;
+}
+
 .spaced {
   margin: 10px 0;
 }
 
 .spaced-2 {
   margin: 0 5%;
+}
+
+.spaced-top {
+  margin-top: 10px;
 }
 
 .sqare {
