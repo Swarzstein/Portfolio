@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400&family=Inter:wght@500&family=InaiMathi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400&family=Inter:wght@500&family=Inter:wght@700&family=InaiMathi:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -185,6 +185,14 @@ hr {
   margin: 5px;
 }
 
+.input-1 {
+  height: 35px;
+  border-style: none;
+  border-bottom-style: solid;
+  border-color: #DBD8D7;
+  padding: 5px 12px;
+}
+
 .link-btn {
   padding: 12px;
   gap: 10px;
@@ -271,6 +279,7 @@ hr {
   justify-content: center;
 }
 
+
 .spaced {
   margin: 10px 0;
 }
@@ -280,7 +289,7 @@ hr {
 }
 
 .spaced-top {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sqare {
@@ -291,6 +300,12 @@ hr {
 
   background: #ff6b00;
   align-self: center;
+}
+
+.t-area-1 {
+  border-style: none;
+  background: #FBF8F7;
+  padding: 12px;
 }
 
 .tema-1-1 {
@@ -329,6 +344,16 @@ hr {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.tema-2-2 {
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+text-align: center;
+color: #172B4D;
 }
 
 .texto1 {
