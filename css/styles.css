@@ -172,7 +172,7 @@ hr {
 .divider-3 {
   width: 134px;
   height: 5px;
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
   justify-self: center;
   margin-top: 10px;
@@ -217,7 +217,7 @@ hr {
   height: 35px;
   border-style: none;
   border-bottom-style: solid;
-  border-color: #DBD8D7;
+  border-color: #dbd8d7;
   padding: 5px 12px;
 }
 
@@ -303,7 +303,6 @@ hr {
   justify-content: center;
 }
 
-
 .spaced {
   margin: 10px 0;
 }
@@ -328,7 +327,7 @@ hr {
 
 .t-area-1 {
   border-style: none;
-  background: #FBF8F7;
+  background: #fbf8f7;
   padding: 12px;
 }
 
@@ -372,12 +371,12 @@ hr {
 
 .tema-2-2 {
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 44px;
-text-align: center;
-color: #172B4D;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
 }
 
 .texto1 {
@@ -413,7 +412,7 @@ color: #172B4D;
 
 .top-line {
   border-top-style: solid;
-  border-color: #DFE1E6;
+  border-color: #dfe1e6;
 }
 
 .top-space {
