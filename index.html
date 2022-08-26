@@ -136,12 +136,12 @@
   <footer>
     <div id="contact-us" class="col-center container-3 column">
       <h2 class="tema-2-2">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <form action="https://formspree.io/
+      <form action="https://formspree.io/f/xaykndkq 
       " method="post">
         <div class="column col-center">
-          <input type="text" name="name" id="name" placeholder="Full name" class="fill-h spaced-top input-1">
-          <input type="email" name="email" id="email" placeholder="Email address" class="fill-h spaced-top input-1">
-          <textarea name="message" id="message" placeholder="Enter text here" cols="30" rows="10" class="fill-h spaced-top t-area-1"></textarea>
+          <input type="text" name="name" id="name" placeholder="Full name" maxlength="30" class="fill-h spaced-top input-1" required>
+          <input type="email" name="email" id="email" placeholder="Email address" class="fill-h spaced-top input-1" required>
+          <textarea name="message" id="message" placeholder="Enter text here" cols="30" rows="10" maxlength="500" class="fill-h spaced-top t-area-1" required></textarea>
           <button type="submit" class="link-btn spaced-top">Get in touch</button>
         </div>
       </form>
