@@ -136,6 +136,18 @@ hr {
   display: flex;
 }
 
+.container-3 {
+  padding: 20% 10% 0 10%;
+  margin-bottom: 0%;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.container-4 {
+  padding: 10% 0;
+  display: flex;
+}
+
 .dark-txt {
   color: #1c1a19;
 }
@@ -155,6 +167,22 @@ hr {
   margin-top: 30px;
   margin-bottom: 60px;
   align-self: center;
+}
+
+.divider-3 {
+  width: 134px;
+  height: 5px;
+  background: #0D151E;
+  border-radius: 10px;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.divider-4 {
+  width: 100%;
+  border-top: 1px solid #dfe1e6;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 .fill-h {
@@ -228,10 +256,6 @@ hr {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-
-  /* --identical to box height, or 133%--
-  --Neutrals/N900-- */
-
   color: #091e42;
 }
 
@@ -385,6 +409,11 @@ color: #172B4D;
   line-height: 44px;
   color: #fff;
   margin-bottom: 5px;
+}
+
+.top-line {
+  border-top-style: solid;
+  border-color: #DFE1E6;
 }
 
 .top-space {
