@@ -138,13 +138,11 @@ hr {
 
 .container-3 {
   padding: 20% 10% 0 10%;
-  margin-bottom: 0%;
-  padding-bottom: 0;
   display: flex;
 }
 
 .container-4 {
-  padding: 10% 0;
+  padding: 2% 0;
   display: flex;
 }
 
@@ -187,6 +185,12 @@ hr {
 
 .fill-h {
   width: 100%;
+}
+
+.fill-hflex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .fit {
@@ -303,6 +307,14 @@ hr {
   justify-content: center;
 }
 
+.self-center {
+  text-align: center;
+}
+
+.space-a {
+  justify-content: space-around;
+}
+
 .spaced {
   margin: 10px 0;
 }
@@ -313,6 +325,10 @@ hr {
 
 .spaced-top {
   margin-top: 20px;
+}
+
+.spaced-bot-10 {
+  margin-bottom: 10vh;
 }
 
 .sqare {
