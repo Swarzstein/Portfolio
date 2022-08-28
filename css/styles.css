@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400&family=Inter:wght@500&family=InaiMathi:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400&family=Inter:wght@500&family=Inter:wght@700&family=InaiMathi:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -136,6 +136,16 @@ hr {
   display: flex;
 }
 
+.container-3 {
+  padding: 20% 10% 0 10%;
+  display: flex;
+}
+
+.container-4 {
+  padding: 2% 0;
+  display: flex;
+}
+
 .dark-txt {
   color: #1c1a19;
 }
@@ -157,8 +167,30 @@ hr {
   align-self: center;
 }
 
+.divider-3 {
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.divider-4 {
+  width: 100%;
+  border-top: 1px solid #dfe1e6;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
 .fill-h {
   width: 100%;
+}
+
+.fill-hflex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .fit {
@@ -183,6 +215,14 @@ hr {
 
 .icon {
   margin: 5px;
+}
+
+.input-1 {
+  height: 35px;
+  border-style: none;
+  border-bottom-style: solid;
+  border-color: #dbd8d7;
+  padding: 5px 12px;
 }
 
 .link-btn {
@@ -220,10 +260,6 @@ hr {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-
-  /* --identical to box height, or 133%--
-  --Neutrals/N900-- */
-
   color: #091e42;
 }
 
@@ -267,12 +303,32 @@ hr {
   align-self: center;
 }
 
+.row-center {
+  justify-content: center;
+}
+
+.self-center {
+  text-align: center;
+}
+
+.space-a {
+  justify-content: space-around;
+}
+
 .spaced {
   margin: 10px 0;
 }
 
 .spaced-2 {
   margin: 0 5%;
+}
+
+.spaced-top {
+  margin-top: 20px;
+}
+
+.spaced-bot-10 {
+  margin-bottom: 10vh;
 }
 
 .sqare {
@@ -283,6 +339,12 @@ hr {
 
   background: #ff6b00;
   align-self: center;
+}
+
+.t-area-1 {
+  border-style: none;
+  background: #fbf8f7;
+  padding: 12px;
 }
 
 .tema-1-1 {
@@ -323,6 +385,16 @@ hr {
   line-height: 24px;
 }
 
+.tema-2-2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+}
+
 .texto1 {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -352,6 +424,11 @@ hr {
   line-height: 44px;
   color: #fff;
   margin-bottom: 5px;
+}
+
+.top-line {
+  border-top-style: solid;
+  border-color: #dfe1e6;
 }
 
 .top-space {
