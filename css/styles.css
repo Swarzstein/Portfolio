@@ -165,7 +165,7 @@ hr {
 
 .divider {
   width: 90%;
-  height: 0px;
+  height: 0;
   border: 1px solid #212121;
   display: inline-block;
   margin-top: 30px;
@@ -225,10 +225,6 @@ hr {
   justify-items: center;
   height: max-content;
   padding-bottom: 130px;
-}
-
-.h-left {
-
 }
 
 .icon {
@@ -528,7 +524,7 @@ hr {
   justify-content: flex-start;
 }
 
-#top-card div div{
+#top-card div div {
   flex-direction: row;
 }
 
@@ -537,7 +533,6 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
-  
   header {
     height: 72px;
     z-index: 3;
@@ -612,6 +607,7 @@ hr {
   #contact-us {
     flex-direction: row;
   }
+
   #contact-us h2 {
     text-align: left;
   }
@@ -638,13 +634,13 @@ hr {
     gap: 15%;
     padding: 20% 2%;
   }
-  
+
   #menu-button {
     display: none;
   }
-  
+
   #menu-options {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -685,8 +681,8 @@ hr {
     justify-content: flex-start;
     gap: 24px 12px;
   }
-  
-  #top-card div div{
+
+  #top-card div div {
     flex-direction: row;
   }
 
@@ -701,6 +697,7 @@ hr {
     padding: 7% 0;
     gap: 15px;
   }
+
   #work-head div {
     width: 74%;
     margin: 0;
