@@ -84,6 +84,10 @@ hr {
   background: #1c1a19;
 }
 
+.mar-bot-per-5 {
+  margin-bottom: 5%;
+}
+
 .btn-group {
   display: flex;
   align-self: flex-start;
