@@ -493,6 +493,17 @@ hr {
   font-size: 18px;
   line-height: 24px;
   align-self: center;
+  animation: myrotate 3s;
+}
+
+@keyframes myrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #menu-button {
@@ -711,5 +722,8 @@ hr {
 
   #work-head h1 {
     margin: 0;
+  }
+  .link-btn-2 fill-h{
+    transition:ease-in, 1s, ease-out, 2s;
   }
 }
