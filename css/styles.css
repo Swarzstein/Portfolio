@@ -682,6 +682,11 @@ hr {
     gap: 24px 12px;
   }
 
+  #work-head div {
+    width: 74%;
+    margin: 0;
+  }
+
   #top-card div div {
     flex-direction: row;
   }
@@ -689,18 +694,13 @@ hr {
   #works {
     padding: 0 15%;
   }
-  
+
   #work-head {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7% 0;
     gap: 15px;
-  }
-
-  #work-head div {
-    width: 74%;
-    margin: 0;
   }
 
   #work-head h1 {
