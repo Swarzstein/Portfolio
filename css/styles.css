@@ -98,7 +98,7 @@ hr {
   margin: 0 auto;
   align-items: flex-end;
   height: 386px;
-  width: 327px;
+  width: 100%;
 }
 
 .card-t {
@@ -493,6 +493,17 @@ hr {
   font-size: 18px;
   line-height: 24px;
   align-self: center;
+  animation: myrotate 3s;
+}
+
+@keyframes myrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 #menu-button {
@@ -549,8 +560,13 @@ hr {
 
   .card {
     height: 435px;
-    width: 369px;
+    width: 100%;
   }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
 
   .card-content {
     height: 100%;
@@ -692,7 +708,8 @@ hr {
   }
 
   #works {
-    padding: 0 15%;
+    padding: 0 5%;
+    padding-bottom: 5%;
   }
 
   #work-head {
@@ -705,5 +722,8 @@ hr {
 
   #work-head h1 {
     margin: 0;
+  }
+  .link-btn-2 fill-h{
+    transition:ease-in, 1s, ease-out, 2s;
   }
 }
