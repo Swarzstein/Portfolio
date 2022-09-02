@@ -98,7 +98,7 @@ hr {
   margin: 0 auto;
   align-items: flex-end;
   height: 386px;
-  width: 327px;
+  width: 100%;
 }
 
 .card-t {
@@ -549,8 +549,13 @@ hr {
 
   .card {
     height: 435px;
-    width: 369px;
+    width: 100%;
   }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
 
   .card-content {
     height: 100%;
@@ -692,7 +697,8 @@ hr {
   }
 
   #works {
-    padding: 0 15%;
+    padding: 0 5%;
+    padding-bottom: 5%;
   }
 
   #work-head {
