@@ -99,6 +99,7 @@ hr {
   align-items: flex-end;
   height: 386px;
   width: 100%;
+  transition: ease-in, .1s, ease-out, 1s;
 }
 
 .card-t {
@@ -256,6 +257,7 @@ hr {
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
+  transition: ease-in, .3s, ease-out, 1s;
 }
 
 .link-btn-2 {
@@ -274,6 +276,7 @@ hr {
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
+  transition: ease-in, .3s, ease-out, 2s;
 }
 
 .main-container {
@@ -544,6 +547,10 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  a {
+    cursor: pointer;
+  }
+
   header {
     height: 72px;
     z-index: 3;
@@ -565,6 +572,7 @@ hr {
 
   .card:hover {
     transform: scale(1.05);
+    cursor: pointer;
   }
 
 
@@ -609,6 +617,19 @@ hr {
   #btn-submit {
     width: fit-content;
     align-self: flex-start;
+  }
+
+  #card1 {
+    flex-direction: column-reverse;
+    background: url(../img/card-img-1.png);
+  }
+
+  #card1 div {
+    display:none;
+  }
+  
+  #card1 button {
+    display: block;
   }
 
   #card-group {
@@ -723,7 +744,26 @@ hr {
   #work-head h1 {
     margin: 0;
   }
-  .link-btn-2 fill-h{
-    transition:ease-in, 1s, ease-out, 2s;
+
+  .link-btn:hover {
+    background: #FFF5E1;
+    border: 1px solid #F55800;
+    color: #F55800;
+    cursor: pointer;
+  }
+
+  .link-btn-2:hover {
+    background: #FFF5E1;
+    border: 1px solid #F55800;
+    color: #F55800;
+    cursor: pointer;
+  }
+
+  .link-btn:active {
+    background: #E05304;
+  }
+
+  .link-btn-2:active {
+    background: #E05304;
   }
 }
