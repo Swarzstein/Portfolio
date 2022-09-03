@@ -99,7 +99,7 @@ hr {
   align-items: flex-end;
   height: 386px;
   width: 100%;
-  transition: ease-in, .1s, ease-out, 1s;
+  transition: ease-in, 0.1s, ease-out, 1s;
 }
 
 .card-t {
@@ -257,7 +257,7 @@ hr {
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
-  transition: ease-in, .3s, ease-out, 1s;
+  transition: ease-in, 0.3s, ease-out, 1s;
 }
 
 .link-btn-2 {
@@ -276,7 +276,7 @@ hr {
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
-  transition: ease-in, .3s, ease-out, 2s;
+  transition: ease-in, 0.3s, ease-out, 2s;
 }
 
 .main-container {
@@ -575,7 +575,6 @@ hr {
     cursor: pointer;
   }
 
-
   .card-content {
     height: 100%;
   }
@@ -625,9 +624,9 @@ hr {
   }
 
   #card1 div {
-    display:none;
+    display: none;
   }
-  
+
   #card1 button {
     display: block;
   }
@@ -746,24 +745,24 @@ hr {
   }
 
   .link-btn:hover {
-    background: #FFF5E1;
-    border: 1px solid #F55800;
-    color: #F55800;
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
     cursor: pointer;
   }
 
   .link-btn-2:hover {
-    background: #FFF5E1;
-    border: 1px solid #F55800;
-    color: #F55800;
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
     cursor: pointer;
   }
 
   .link-btn:active {
-    background: #E05304;
+    background: #e05304;
   }
 
   .link-btn-2:active {
-    background: #E05304;
+    background: #e05304;
   }
 }
