@@ -159,6 +159,7 @@ hr {
   padding: 2% 0;
   display: flex;
 }
+
 .container-5 {
   padding: 20% 10% 10% 10%;
 }
@@ -682,10 +683,6 @@ hr {
 
   #desktop-img {
     display: flex;
-  }
-
-  #message {
-    width:500px;
   }
 
   #headline {
