@@ -98,7 +98,8 @@ hr {
   margin: 0 auto;
   align-items: flex-end;
   height: 386px;
-  width: 327px;
+  width: 100%;
+  transition: ease-in, 0.1s, ease-out, 1s;
 }
 
 .card-t {
@@ -157,6 +158,10 @@ hr {
 .container-4 {
   padding: 2% 0;
   display: flex;
+}
+
+.container-5 {
+  padding: 20% 10% 10% 10%;
 }
 
 .dark-txt {
@@ -256,6 +261,7 @@ hr {
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
+  transition: ease-in, 0.3s, ease-out, 1s;
 }
 
 .link-btn-2 {
@@ -274,6 +280,7 @@ hr {
   /* Theme 2 / Neutral 11 */
 
   color: #fff;
+  transition: ease-in, 0.3s, ease-out, 2s;
 }
 
 .main-container {
@@ -358,7 +365,7 @@ hr {
 }
 
 .spaced-2 {
-  margin: 0 5%;
+  margin: 10% 0;
 }
 
 .spaced-top {
@@ -386,8 +393,7 @@ hr {
 }
 
 .tema-1-1 {
-  width: 327px;
-  height: 124px;
+  padding: 5% 0;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -478,6 +484,11 @@ hr {
   color: #fff;
 }
 
+#ab-info {
+  display: flex;
+  align-content: flex-start;
+}
+
 #desktop-img {
   display: none;
 }
@@ -493,6 +504,21 @@ hr {
   font-size: 18px;
   line-height: 24px;
   align-self: center;
+  animation: myrotate 3s;
+}
+
+@keyframes myrotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#img-ab-td {
+  margin-right: -12%;
 }
 
 #menu-button {
@@ -532,10 +558,29 @@ hr {
   text-align: left;
 }
 
+#works {
+  padding: 0 10%;
+}
+
 @media only screen and (min-width: 768px) {
+  a {
+    cursor: pointer;
+  }
+
   header {
     height: 72px;
     z-index: 3;
+  }
+
+  textarea {
+    width: 93%;
+    height: 10vh;
+    resize: none;
+  }
+
+  .ab-list {
+    width: 100%;
+    align-content: flex-start;
   }
 
   .bckgrnd {
@@ -543,13 +588,14 @@ hr {
     position: inherit;
   }
 
-  .divider-4 {
-    display: none;
-  }
-
   .card {
     height: 435px;
-    width: 369px;
+    width: 100%;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   .card-content {
@@ -558,6 +604,14 @@ hr {
 
   .card-content p {
     text-align: left;
+  }
+
+  .container-3 {
+    align-items: baseline;
+  }
+
+  .container-5 {
+    padding: 15% 5% 10% 10%;
   }
 
   .header-item {
@@ -595,6 +649,19 @@ hr {
     align-self: flex-start;
   }
 
+  #card1 {
+    flex-direction: column-reverse;
+    background: url(../img/card-img-1.png);
+  }
+
+  #card1 div {
+    display: none;
+  }
+
+  #card1 button {
+    display: block;
+  }
+
   #card-group {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -609,7 +676,9 @@ hr {
   }
 
   #contact-us h2 {
+    width: 55%;
     text-align: left;
+    padding-right: 5%;
   }
 
   #desktop-img {
@@ -623,6 +692,8 @@ hr {
 
   #img-ab-dt {
     display: flex;
+    padding-left: 12%;
+    width: -webkit-fill-available;
   }
 
   #img-ab-p {
@@ -663,6 +734,10 @@ hr {
     flex-direction: column;
   }
 
+  #social-media-f {
+    padding: 0;
+  }
+
   #top-card {
     flex-direction: row;
     width: 99%;
@@ -691,10 +766,6 @@ hr {
     flex-direction: row;
   }
 
-  #works {
-    padding: 0 15%;
-  }
-
   #work-head {
     display: flex;
     justify-content: center;
@@ -703,7 +774,34 @@ hr {
     gap: 15px;
   }
 
+  #works {
+    padding: 0 5%;
+    padding-bottom: 5%;
+  }
+
   #work-head h1 {
     margin: 0;
+  }
+
+  .link-btn:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+    cursor: pointer;
+  }
+
+  .link-btn-2:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+    cursor: pointer;
+  }
+
+  .link-btn:active {
+    background: #e05304;
+  }
+
+  .link-btn-2:active {
+    background: #e05304;
   }
 }
