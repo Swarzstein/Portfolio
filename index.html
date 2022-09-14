@@ -9,16 +9,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="wide-menu" class="wide-menu hidden">
+    <div class="flex-right">
+      <button type="button" class="img-btn" onclick="displayMenu()">
+        <img src="icons/Icon-Cancel.png" alt="Cancel">
+      </button>
+    </div>
+    <div class="container-2 column">
+      <a href="#headline" onclick="displayMenu()"><h2>Portfolio</h2></a>
+      <div class="divider"></div>
+      <a href="#" onclick="displayMenu()"><h2>About</h2></a>
+      <div class="divider"></div>
+      <a href="#" onclick="displayMenu()"><h2>Contact</h2></a>
+      <div class="divider"></div>
+    </div>
+    
+  </div>
   <header>
     <div class="header-item" id="logo-container">
       <a href="#">Juan Zorrilla</a>
     </div>
     <div class="header-item">
       <nav>
-        <button class="header-item" id="menu-button">
+        <button class="header-item menu-button" id="menu-button" type="button" onclick="displayMenu()">
           <img src="icons/Icon-Menu.png" alt="btn">
         </button>
-        <ul id="menu-options">
+        <ul id="menu-options" class="hidden">
+          <li class="hidden">X</li>
           <li>Portfolio</li>
           <li>About</li>
           <li>Contact</li>
@@ -252,4 +269,5 @@
     </div>
   </footer>
 </body>
+<script src="js/main.js"></script>
 </html>
