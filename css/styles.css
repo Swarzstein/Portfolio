@@ -505,16 +505,17 @@ hr {
   align-content: center;
   z-index: 4;
 
-  font-family: 'Inter';
+  /*Font*/
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
   line-height: 44px;
-  color: #FFF5E1;
+  color: #fff5e1;
   padding: 0 3%;
 }
 
-.wide-menu div a{
+.wide-menu div a {
   padding: 3% 5%;
   border-bottom: solid 1px #6f6c6b;
 }
