@@ -9,16 +9,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="wide-menu" class="wide-menu hidden">
+    <div class="flex-right">
+      <button type="button" class="img-btn">
+        <img src="icons/Icon-Cancel.png" alt="Cancel">
+      </button>
+    </div>
+    <div class="container-2 column">
+      <a onclick="displayMenu()" href="#headline"><h2>Portfolio</h2></a>
+      <a onclick="displayMenu()" href="#about-myself"><h2>About</h2></a>
+      <a onclick="displayMenu()" href="#contact"><h2>Contact</h2></a>
+    </div>
+  </div>
   <header>
     <div class="header-item" id="logo-container">
       <a href="#">Juan Zorrilla</a>
     </div>
     <div class="header-item">
       <nav>
-        <button class="header-item" id="menu-button">
+        <button class="header-item menu-button" id="menu-button" type="button">
           <img src="icons/Icon-Menu.png" alt="btn">
         </button>
-        <ul id="menu-options">
+        <ul id="menu-options" class="hidden">
+          <li class="hidden">X</li>
           <li>Portfolio</li>
           <li>About</li>
           <li>Contact</li>
@@ -222,6 +235,7 @@
 
   </section>
   <footer>
+    <footer id ="contact">
     <div id="contact-us" class="container-3 column spaced-bot-10">
       <h2 class="tema-2-2">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form action="https://formspree.io/f/xaykndkq 
@@ -252,4 +266,5 @@
     </div>
   </footer>
 </body>
+<script src="js/main.js"></script>
 </html>
