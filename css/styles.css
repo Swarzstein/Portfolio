@@ -177,15 +177,6 @@ hr {
   margin-bottom: 60px;
 }
 
-.divider-1 {
-  width: 90%;
-  height: 0;
-  border: 1px solid #6f6c6b;
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
-
 .divider-2 {
   width: 90%;
   border: 1px solid #fff;
@@ -505,7 +496,7 @@ hr {
 }
 
 .wide-menu {
-  width: 100%;
+  width: -webkit-fill-available;
   height: 100vh;
   position: fixed;
   background-color: #3c3a39;
@@ -513,6 +504,19 @@ hr {
   flex-direction: column;
   align-content: center;
   z-index: 4;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 44px;
+  color: #FFF5E1;
+  padding: 0 3%;
+}
+
+.wide-menu div a{
+  padding: 3% 5%;
+  border-bottom: solid 1px #6f6c6b;
 }
 
 .wht {
