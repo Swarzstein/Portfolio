@@ -6,7 +6,7 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    mProject: true
+    mProject: true,
   },
   card1: {
     id: 1,
@@ -15,7 +15,7 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    mProject: false
+    mProject: false,
   },
   card2: {
     id: 2,
@@ -24,7 +24,7 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    mProject: false
+    mProject: false,
   },
   card3: {
     id: 3,
@@ -33,7 +33,7 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    mProject: false
+    mProject: false,
   },
   card4: {
     id: 4,
@@ -42,7 +42,7 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    mProject: false
+    mProject: false,
   },
   card5: {
     id: 5,
@@ -51,7 +51,7 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    mProject: false
+    mProject: false,
   },
   card6: {
     id: 6,
@@ -60,19 +60,20 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
-    mProject: false
-  }
+    mProject: false,
+  },
 };
 
 function loadWorks() {
   let topCard = '';
   let cardGroup = '';
-  for(let project in projects) {
-    let proj = projects[project];
+  //  eslint-disable-next-line
+  for(const project in projects) {
+    const proj = projects[project];
     let technologies = '';
     const projTech = proj.technologies;
-    if(!proj.mProject) {
-      for (let i = 0; i < projTech.length; i++) {
+    if (!proj.mProject) {
+      for (let i = 0; i < projTech.length; i += 1) {
         technologies += `\t\t\t\t\t\t<button class="p-lang-2">${projTech[i]}</button>\n`;
       }
       cardGroup += `
@@ -87,7 +88,7 @@ function loadWorks() {
       <button class="link-btn-2 fill-h" onclick="seeProject('${project}')">See Project</button>\n
     </div>\n`;
     } else {
-      for (let i = 0; i < projTech.length; i++) {
+      for (let i = 0; i < projTech.length; i += 1) {
         technologies += `\t\t\t\t\t\t<button class="p-lang">${projTech[i]}</button>\n`;
       }
       topCard += `
@@ -114,10 +115,11 @@ function displayMenu() {
   document.querySelector('body').classList.toggle('noscroll');
 }
 
+// eslint-disable-next-line
 function seeProject(id) {
   const project = projects[id];
   let technologies = '';
-  for (let i = 0; i < project.technologies.length; i++) {
+  for (let i = 0; i < project.technologies.length; i += 1) {
     technologies += `\t\t\t\t\t\t<button class="p-lang g-1">${project.technologies[i]}</button>`;
   }
   document.querySelector('#card-modal').classList.toggle('hidden');
