@@ -1,4 +1,68 @@
-
+const projects = {
+  card0: {
+    id: 0,
+    title: 'Multi-Post Stories',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    technologies: ['CSS','HTML', 'Bootstrap', 'Ruby'],
+    mProject: true
+  },
+  card1: {
+    id: 1,
+    title: 'Profesional Art Printing Data',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['HTML','Bootstrap','Ruby'],
+    mProject: false
+  },
+  card2: {
+    id: 2,
+    title: 'Profesional Art Printing Data',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['HTML','Bootstrap','Ruby'],
+    mProject: false
+  },
+  card3: {
+    id: 3,
+    title: 'Profesional Art Printing Data',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['HTML','Bootstrap','Ruby'],
+    mProject: false
+  },
+  card4: {
+    id: 4,
+    title: 'Profesional Art Printing Data',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['HTML','Bootstrap','Ruby'],
+    mProject: false
+  },
+  card5: {
+    id: 5,
+    title: 'Profesional Art Printing Data',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['HTML','Bootstrap','Ruby'],
+    mProject: false
+  },
+  card6: {
+    id: 6,
+    title: 'Profesional Art Printing Data',
+    imgs: '../img/card-img-1.png',
+    imgb: '../img/Img-Placeholder.png',
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
+    technologies: ['HTML','Bootstrap','Ruby'],
+    mProject: false
+  }
+};
 
 function loadWorks() {
   let topCard = "";
@@ -82,69 +146,3 @@ function closeModal() {
 document.querySelector('#menu-button').addEventListener('click', displayMenu);
 document.querySelector('#wide-menu > div > button').addEventListener('click', displayMenu);
 document.querySelector('#close-modal').addEventListener('click', closeModal);
-
-const projects = {
-  card0: {
-    id: 0,
-    title: 'Multi-Post Stories',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    technologies: ['CSS','HTML', 'Bootstrap', 'Ruby'],
-    mProject: true
-  },
-  card1: {
-    id: 1,
-    title: 'Profesional Art Printing Data',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
-    mProject: false
-  },
-  card2: {
-    id: 2,
-    title: 'Profesional Art Printing Data',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
-    mProject: false
-  },
-  card3: {
-    id: 3,
-    title: 'Profesional Art Printing Data',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
-    mProject: false
-  },
-  card4: {
-    id: 4,
-    title: 'Profesional Art Printing Data',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
-    mProject: false
-  },
-  card5: {
-    id: 5,
-    title: 'Profesional Art Printing Data',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
-    mProject: false
-  },
-  card6: {
-    id: 6,
-    title: 'Profesional Art Printing Data',
-    imgs: '../img/card-img-1.png',
-    imgb: '../img/Img-Placeholder.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
-    mProject: false
-  }
-};
