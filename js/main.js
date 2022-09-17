@@ -46,7 +46,7 @@ function loadWorks() {
 function mauseOn(id){
   if(window.innerWidth > 768){
     id="#"+id;
-    document.querySelector(id).classList.toggle('hidden');
+    //document.querySelector(id).classList.toggle('hidden');
   }
   //
   //window.alert(window.innerWidth);
