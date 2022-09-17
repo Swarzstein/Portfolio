@@ -222,7 +222,7 @@ hr {
 }
 
 .flex {
-  display:flex;
+  display: flex;
 }
 
 .flex-right {
@@ -235,7 +235,7 @@ hr {
 }
 
 .gap-i {
-  gap: inherit
+  gap: inherit;
 }
 
 .gradient {
@@ -273,7 +273,7 @@ hr {
 }
 
 .inter-16 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -384,7 +384,7 @@ hr {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   margin-bottom: 1%;
 }
 
@@ -648,7 +648,6 @@ hr {
   padding: 0 10%;
 }
 
-
 .modal {
   z-index: 4;
   position: fixed;
@@ -672,7 +671,6 @@ hr {
   display: flex;
   justify-content: space-between;
 }
-
 
 .space-between-y {
   justify-content: space-between;
@@ -926,7 +924,7 @@ hr {
     padding: 7% 10%;
     background: #0007;
   }
-  
+
   .modal-container {
     display: flex;
     flex-direction: column;
