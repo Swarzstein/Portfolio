@@ -8,23 +8,25 @@
   <link rel="stylesheet" href="css/styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body onload="loadWorks()">
 
-    <div class="modal">
+    <div id="card-modal" class="modal hidden">
       <div class="modal-container">
-        <div class="flex space-between-h fit-container modal-title">
-          <h2 class="roboto-32">Titulo de proyecto</h2>
-          <button type="button" class="img-btn">
+        <div class="flex space-between-x fit-container modal-title">
+          <h2 id="modal-title" class="roboto-32">Titulo de proyecto</h2>
+          <button id="close-modal" type="button" class="img-btn">
             <img src="icons/Icon-Cancel.png" alt="Cancel">
           </button>
         </div>
-        <div class="flex">
+        <div id="modal-tecs" class="flex g-1">
           <button class="p-lang">HTML</button>
         </div>
-        <div class="modal-content column gap-i">
-          <img class="fit-container" src="img/Img-Placeholder.png" alt="imagen">
-          <div class="column gap-i">
-            <p class="inter-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet doloribus laboriosam commodi vero incidunt est quisquam, ut rem officia accusamus non, necessitatibus nulla facilis deleniti autem quam magni! Maiores, minima?</p>
+        <div class="modal-content column g-1">
+          <div class="fit-container">
+            <img id="modal-img" class="fit-container" src="img/Img-Placeholder.png" alt="imagen">
+          </div>
+          <div class="column fit-container space-between-y g-1">
+            <p id="modal-desc" class="spaced inter-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
             <div class="flex g-1">
               <button class="link-btn flex">See Live <img src="./icons/Icon-Export.png" alt="Live"></button>
               <button class="link-btn flex">See Source <img src="./icons/Icon-GitHub3.png" alt="GitHub"></button>
@@ -96,19 +98,8 @@
     
 
     <div class="main-container">
-      <div id="top-card" class="card-t column col-center dark-txt">
-        <img src="img/Img-Placeholder.png" alt="picture">
-        <div>
-          <h2 class="title-post">Multi-Post Stories</h2>
-          <p class="tema-2">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-          <div class="btn-group">
-            <button class="p-lang">css</button>
-            <button class="p-lang">html</button>
-            <button class="p-lang">bootstrap</button>
-            <button class="p-lang">Ruby</button>
-          </div>
-          <button class="link-btn fit">See Project</button>
-        </div>
+      <div id="top-card" class="card-t column col-center dark-txt g-1">
+        
       </div>
 
       <div id="card-group">
@@ -123,7 +114,7 @@
               <li><button class="p-lang-2">Ruby</button></li>
             </ul>
           </div>
-          <button class="link-btn-2 fill-h">See Project</button>
+          <button class="link-btn-2 fill-h" onclick="seeProject()">See Project</button>
         </div>
 
         <div class="card column wht bg-img-1">

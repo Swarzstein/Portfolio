@@ -231,7 +231,7 @@ hr {
 }
 
 .g-1 {
-  gap: 5%;
+  gap: 10px;
 }
 
 .gap-i {
@@ -385,6 +385,7 @@ hr {
   font-size: 32px;
   line-height: 44px;
   color: #172B4D;
+  margin-bottom: 1%;
 }
 
 .rombo {
@@ -653,7 +654,7 @@ hr {
   position: fixed;
   height: 100vh;
   width: -webkit-fill-available;
-  padding: 10% 5%;
+  padding: 5% 5%;
   background: #0007;
 }
 
@@ -667,8 +668,13 @@ hr {
   border: 1px solid #dfe1e6;
 }
 
-.space-between-h {
+.space-between-x {
   display: flex;
+  justify-content: space-between;
+}
+
+
+.space-between-y {
   justify-content: space-between;
 }
 
@@ -857,10 +863,6 @@ hr {
     align-items: flex-start;
   }
 
-  #top-card img {
-    width: 50%;
-  }
-
   #top-card div {
     display: flex;
     flex-direction: column;
@@ -930,7 +932,7 @@ hr {
     flex-direction: column;
     padding: 16px;
     max-height: 90vh;
-    gap: 24px;
+    gap: 0;
     background: #fff;
     border: 1px solid #dfe1e6;
   }
@@ -938,5 +940,9 @@ hr {
   .modal-content {
     display: flex;
     flex-direction: row;
+  }
+
+  #modal-tecs button {
+    margin-bottom: 5%;
   }
 }
