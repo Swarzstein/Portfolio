@@ -5,7 +5,7 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    technologies: ['CSS','HTML', 'Bootstrap', 'Ruby'],
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     mProject: true
   },
   card1: {
@@ -14,7 +14,7 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     mProject: false
   },
   card2: {
@@ -23,7 +23,7 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     mProject: false
   },
   card3: {
@@ -32,7 +32,7 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     mProject: false
   },
   card4: {
@@ -41,7 +41,7 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     mProject: false
   },
   card5: {
@@ -50,7 +50,7 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     mProject: false
   },
   card6: {
@@ -59,27 +59,27 @@ const projects = {
     imgs: '../img/card-img-1.png',
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    technologies: ['HTML','Bootstrap','Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby'],
     mProject: false
   }
 };
 
 function loadWorks() {
-  let topCard = "";
-  let cardGroup = "";
-  for(let project in projects){
+  let topCard = '';
+  let cardGroup = '';
+  for(let project in projects) {
     let proj = projects[project];
-    let technologies = "";
-    let projTech = proj['technologies'];
-    if(!proj['mProject']){
+    let technologies = '';
+    const projTech = proj.technologies;
+    if(!proj.mProject) {
       for (let i = 0; i < projTech.length; i++) {
         technologies += `\t\t\t\t\t\t<button class="p-lang-2">${projTech[i]}</button>\n`;
       }
       cardGroup += `
       <div id="${project}" class="card column wht bg-img-1" onmouseover="mauseOn('${project}')" onmouseout="mauseOff('${project}')">\n
       <div class="card-content">\n
-        <h2 class="title-post-2">${proj['title']}</h2>\n
-        <p class="tema-2">${proj['description']}</p>\n
+        <h2 class="title-post-2">${proj.title}</h2>\n
+        <p class="tema-2">${proj.description}</p>\n
         <ul class="btn-group">\n
         ${technologies}
         </ul>\n
@@ -92,11 +92,11 @@ function loadWorks() {
       }
       topCard += `
       \t\t\t\t<div class="fit-container g-1">\n
-      \t\t\t\t\t<img class="fit-container" src="${proj['imgb']}" alt="picture">\n
+      \t\t\t\t\t<img class="fit-container" src="${proj.imgb}" alt="picture">\n
       \t\t\t\t</div>\n
       \t\t\t\t<div class="fit-container g-1">\n
-      \t\t\t\t\t<h2 class="title-post">${proj['title']}</h2>\n
-      \t\t\t\t\t<p class="tema-2">${proj['description']}</p>\n
+      \t\t\t\t\t<h2 class="title-post">${proj.title}</h2>\n
+      \t\t\t\t\t<p class="tema-2">${proj.description}</p>\n
       \t\t\t\t\t<div class="btn-group g-1 spaced">\n
       ${technologies}
       \t\t\t\t\t</div>\n
@@ -106,18 +106,6 @@ function loadWorks() {
   }
   document.getElementById('top-card').innerHTML = topCard;
   document.getElementById('card-group').innerHTML = cardGroup;
-
-}
-
-function mauseOn(id){
-  if(window.innerWidth > 768){
-    id='#' + id;
-    //document.querySelector(id).classList.toggle('hidden');
-  }
-}
-
-function mauseOff(){
-  //document.querySelector('#top-card').classList.toggle('hidden');
 }
 
 function displayMenu() {
@@ -134,7 +122,7 @@ function seeProject(id) {
   }
   document.querySelector('#card-modal').classList.toggle('hidden');
   document.querySelector('#modal-title').textContent = project.title;
-  document.getElementById("modal-tecs").innerHTML = technologies;
+  document.getElementById('modal-tecs').innerHTML = technologies;
   document.querySelector('#modal-img').textContent = project.imgb;
   document.querySelector('#modal-desc').textContent = project.description;
 }
@@ -146,3 +134,4 @@ function closeModal() {
 document.querySelector('#menu-button').addEventListener('click', displayMenu);
 document.querySelector('#wide-menu > div > button').addEventListener('click', displayMenu);
 document.querySelector('#close-modal').addEventListener('click', closeModal);
+document.querySelector('body').addEventListener('load', loadWorks);
