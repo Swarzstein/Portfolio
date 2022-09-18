@@ -146,13 +146,26 @@ function seeProject(id) {
 }
 
 // eslint-disable-next-line
-function openURL(url){
+function openURL(url) {
   window.open(url, '_blank').focus();
 }
 
 function closeModal() {
   document.querySelector('#card-modal').classList.toggle('hidden');
 }
+
+const email = document.getElementById('email');
+
+document.querySelector('#email').addEventListener('keyup', (e) => {
+  const regx = /[A-Z]/g;
+  if (regx.test(email.value)) {
+    e.preventDefault();
+    window.alert(`${email.value} es texto inválido`); // eslint-disable-line
+    document.querySelector('#email').classList.add('invalid');
+  } else {
+    document.querySelector('#email').classList.remove('invalid');
+  }
+});
 
 document.querySelector('#menu-button').addEventListener('click', displayMenu);
 document.querySelector('#wide-menu > div > button').addEventListener('click', displayMenu);

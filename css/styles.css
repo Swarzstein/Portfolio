@@ -681,6 +681,10 @@ hr {
   justify-content: space-between;
 }
 
+.invalid {
+  border-color: #8e0000;
+}
+
 @media only screen and (min-width: 768px) {
   a {
     cursor: pointer;
