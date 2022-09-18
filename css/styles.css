@@ -562,6 +562,10 @@ hr {
   border-bottom: solid 1px #6f6c6b;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .wht {
   color: #fff;
 }
