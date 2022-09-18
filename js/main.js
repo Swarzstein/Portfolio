@@ -6,6 +6,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: true,
   },
   card1: {
@@ -15,6 +17,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: false,
   },
   card2: {
@@ -24,6 +28,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: false,
   },
   card3: {
@@ -33,6 +39,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: false,
   },
   card4: {
@@ -42,6 +50,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: false,
   },
   card5: {
@@ -51,6 +61,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: false,
   },
   card6: {
@@ -60,6 +72,8 @@ const projects = {
     imgb: '../img/Img-Placeholder.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
+    linkLive:'https://swarzstein.github.io/Portfolio/',
+    linkSource:'https://github.com/Swarzstein/Portfolio',
     mProject: false,
   },
 };
@@ -127,6 +141,13 @@ function seeProject(id) {
   document.getElementById('modal-tecs').innerHTML = technologies;
   document.querySelector('#modal-img').textContent = project.imgb;
   document.querySelector('#modal-desc').textContent = project.description;
+  document.getElementById('open-links').innerHTML = `\t\t\t\t\t\t\t<button class="link-btn flex" onclick="openURL('${project.linkLive}')">See Live <img src="./icons/Icon-Export.png" alt="Live"></button>\n
+  \t\t\t\t\t\t\t<button class="link-btn flex" onclick="openURL('${project.linkSource}')">See Source <img src="./icons/Icon-GitHub3.png" alt="GitHub"></button>\n`;
+}
+
+// eslint-disable-next-line
+function openURL(url){
+  window.open(url, '_blank').focus();
 }
 
 function closeModal() {
