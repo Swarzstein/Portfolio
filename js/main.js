@@ -167,7 +167,7 @@ document.querySelector('#email').addEventListener('keyup', (e) => {
   }
 });
 
+document.querySelector('body').addEventListener('load', loadWorks);
 document.querySelector('#menu-button').addEventListener('click', displayMenu);
 document.querySelector('#wide-menu > div > button').addEventListener('click', displayMenu);
 document.querySelector('#close-modal').addEventListener('click', closeModal);
-document.querySelector('body').addEventListener('load', loadWorks);
