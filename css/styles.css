@@ -917,7 +917,7 @@ hr {
     position: fixed;
     height: 100vh;
     width: -webkit-fill-available;
-    padding: 7% 10%;
+    padding: 5% 10%;
     background: #0007;
   }
 
@@ -938,5 +938,9 @@ hr {
 
   #modal-tecs button {
     margin-bottom: 5%;
+  }
+
+  .mb-1per {
+    margin-bottom: 1%;
   }
 }
