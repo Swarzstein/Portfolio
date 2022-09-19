@@ -157,10 +157,13 @@ function closeModal() {
 const email = document.getElementById('email');
 
 document.querySelector('#email').addEventListener('keyup', (e) => {
-  const regx = /[A-Z]/g;
-  if (regx.test(email.value)) {
+  const regx = /[A-Z]/;
+
+  if (email.value.match(regx)) {
     e.preventDefault();
     window.alert(`${email.value} es texto inválido`); // eslint-disable-line
+    document.querySelector('#email').style.border = '1px solid rgb(204, 11, 11)';
+
     document.querySelector('#email').classList.add('invalid');
   } else {
     document.querySelector('#email').classList.remove('invalid');
