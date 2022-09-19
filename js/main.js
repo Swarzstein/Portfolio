@@ -157,7 +157,7 @@ function closeModal() {
 const email = document.getElementById('email');
 
 document.querySelector('#email').addEventListener('keyup', (e) => {
-  const regx = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+  const regx = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
 
   if (email.value.match(regx)) {
     e.preventDefault();
