@@ -10,31 +10,31 @@
 </head>
 <body onload="loadWorks()">
 
-    <div id="card-modal" class="modal hidden">
-      <div class="modal-container">
-        <div class="flex space-between-x fit-container modal-title">
-          <h2 id="modal-title" class="roboto-32">Titulo de proyecto</h2>
-          <button id="close-modal" type="button" class="img-btn">
-            <img src="icons/Icon-Cancel.png" alt="Cancel">
-          </button>
+  <div id="card-modal" class="modal hidden">
+    <div class="modal-container">
+      <div class="flex space-between-x fit-container modal-title">
+        <h2 id="modal-title" class="roboto-32">Titulo de proyecto</h2>
+        <button id="close-modal" type="button" class="img-btn">
+          <img src="icons/Icon-Cancel.png" alt="Cancel">
+        </button>
+      </div>
+      <div id="modal-tecs" class="flex wrap g-1">
+        <button class="p-lang">HTML</button>
+      </div>
+      <div class="modal-content column g-1">
+        <div class="fit-container">
+          <img id="modal-img" class="fit-container" src="img/Img-Placeholder.png" alt="imagen">
         </div>
-        <div id="modal-tecs" class="flex wrap g-1">
-          <button class="p-lang">HTML</button>
-        </div>
-        <div class="modal-content column g-1">
-          <div class="fit-container">
-            <img id="modal-img" class="fit-container" src="img/Img-Placeholder.png" alt="imagen">
-          </div>
-          <div class="column fit-container space-between-y g-1">
-            <p id="modal-desc" class="spaced inter-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
-            <div id="open-links" class="flex g-1">
-              <button class="link-btn flex">See Live <img src="./icons/Icon-Export.png" alt="Live"></button>
-              <button class="link-btn flex">See Source <img src="./icons/Icon-GitHub3.png" alt="GitHub"></button>
-            </div>
+        <div class="column fit-container space-between-y g-1">
+          <p id="modal-desc" class="spaced inter-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.</p>
+          <div id="open-links" class="flex g-1">
+            <button class="link-btn flex">See Live <img src="./icons/Icon-Export.png" alt="Live"></button>
+            <button class="link-btn flex">See Source <img src="./icons/Icon-GitHub3.png" alt="GitHub"></button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <div id="wide-menu" class="wide-menu hidden">
     <div class="flex-right">
@@ -48,6 +48,7 @@
       <a onclick="displayMenu()" href="#contact"><h2>Contact</h2></a>
     </div>
   </div>
+
   <header>
     <div class="header-item" id="logo-container">
       <a href="#">Juan Zorrilla</a>
