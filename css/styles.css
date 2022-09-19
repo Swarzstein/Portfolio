@@ -78,6 +78,7 @@ hr {
 
 .bg-img-1 {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../img/card-img-1.png);
+  background-repeat: no-repeat;
 }
 
 .black-bg {
@@ -217,9 +218,25 @@ hr {
   align-self: flex-start;
 }
 
+.fit-container {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
 .flex-right {
   display: flex;
   justify-content: end;
+}
+
+.g-1 {
+  gap: 10px;
+}
+
+.gap-i {
+  gap: inherit;
 }
 
 .gradient {
@@ -256,9 +273,20 @@ hr {
   width: 92%;
 }
 
+.inter-16 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
 .link-btn {
   padding: 12px;
-  gap: 10px;
   height: 48px;
   background-color: #ff6b00;
   border-style: none;
@@ -295,6 +323,7 @@ hr {
 }
 
 .main-container {
+  padding: 15% 0;
   display: grid;
   grid-gap: 30px;
   grid-auto-flow: dense;
@@ -303,6 +332,10 @@ hr {
 
 .menu-active {
   width: 100vh;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 .p-lang {
@@ -344,6 +377,16 @@ hr {
   justify-content: end;
   margin-top: 40%;
   z-index: 0;
+}
+
+.roboto-32 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 1%;
 }
 
 .rombo {
@@ -520,6 +563,10 @@ hr {
   border-bottom: solid 1px #6f6c6b;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .wht {
   color: #fff;
 }
@@ -565,6 +612,10 @@ hr {
   margin-right: -12%;
 }
 
+#img-ab-p {
+  margin-right: -12%;
+}
+
 #menu-button {
   background: #3c3a39;
   border-radius: 5px;
@@ -600,6 +651,38 @@ hr {
 
 #works {
   padding: 0 10%;
+}
+
+.modal {
+  z-index: 4;
+  position: fixed;
+  height: 100vh;
+  width: -webkit-fill-available;
+  padding: 5% 5%;
+  background: #0007;
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  max-height: 90vh;
+  gap: 24px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+}
+
+.space-between-x {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-between-y {
+  justify-content: space-between;
+}
+
+.invalid {
+  border-color: #8e0000;
 }
 
 @media only screen and (min-width: 768px) {
@@ -652,14 +735,11 @@ hr {
 
   .container-5 {
     padding: 15% 5% 10% 10%;
+    width: 75%;
   }
 
   .header-item {
     margin: 0% 5%;
-  }
-
-  .link-btn-2 {
-    display: none;
   }
 
   .right {
@@ -687,15 +767,6 @@ hr {
   #btn-submit {
     width: fit-content;
     align-self: flex-start;
-  }
-
-  #card1 {
-    flex-direction: column-reverse;
-    background: url(../img/card-img-1.png);
-  }
-
-  #card1 div {
-    display: none;
   }
 
   #card1 button {
@@ -786,10 +857,6 @@ hr {
     align-items: flex-start;
   }
 
-  #top-card img {
-    width: 50%;
-  }
-
   #top-card div {
     display: flex;
     flex-direction: column;
@@ -843,5 +910,33 @@ hr {
 
   .link-btn-2:active {
     background: #e05304;
+  }
+
+  .modal {
+    z-index: 4;
+    position: fixed;
+    height: 100vh;
+    width: -webkit-fill-available;
+    padding: 7% 10%;
+    background: #0007;
+  }
+
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    max-height: 90vh;
+    gap: 0;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+  }
+
+  .modal-content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #modal-tecs button {
+    margin-bottom: 5%;
   }
 }
