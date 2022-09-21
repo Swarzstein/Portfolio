@@ -78,27 +78,28 @@ const projects = {
   },
 };
 
-const form = document.querySelector('#contact-form');
 const email = document.querySelector('#email');
 const fullName = document.querySelector('#name');
 const message = document.querySelector('#message');
+const submitBtn = document.querySelector('#btn-submit > button');
 const regx = /^[a-z0-9]+[a-z0-9._]+@[a-z0-9-.]+\.[a-z0-9]+$/gm;
 
 function validField() {
   if (!email.value.match(regx) || email.value === '' || fullName.value === '' || message.value === '') {
-    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
-    document.querySelector('#btn-submit > button').classList.remove('link-btn');
+    submitBtn.classList.add('disabled-btn');
+    submitBtn.classList.remove('link-btn');
   } else {
-    document.querySelector('#btn-submit > button').classList.remove('disabled-btn');
-    document.querySelector('#btn-submit > button').classList.add('link-btn');
+    submitBtn.classList.remove('disabled-btn');
+    submitBtn.classList.add('link-btn');
   }
 }
 
 function validateButton(e) {
+  const error = document.querySelector('#error');
   if (email.value.match(regx)) {
-    document.querySelector('#error').classList.add('hidden');
+    error.classList.add('hidden');
   } else {
-    document.querySelector('#error').classList.remove('hidden');
+    error.classList.remove('hidden');
     e.preventDefault();
   }
 }
@@ -180,7 +181,7 @@ function closeModal() {
   document.querySelector('#card-modal').classList.toggle('hidden');
 }
 
-form.addEventListener('submit', validateButton);
+document.querySelector('#contact-form').addEventListener('submit', validateButton);
 email.addEventListener('keyup', validField);
 fullName.addEventListener('keyup', validField);
 message.addEventListener('keyup', validField);
