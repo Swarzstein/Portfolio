@@ -78,6 +78,31 @@ const projects = {
   },
 };
 
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const fullName = document.querySelector('#name');
+const message = document.querySelector('#message');
+const regx = /^[a-z0-9]+[a-z0-9._]+@[a-z0-9-.]+\.[a-z0-9]+$/gm;
+
+function validField() {
+  if (!email.value.match(regx) || email.value === '' || fullName.value === '' || message.value === '') {
+    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
+    document.querySelector('#btn-submit > button').classList.remove('link-btn');
+  } else {
+    document.querySelector('#btn-submit > button').classList.remove('disabled-btn');
+    document.querySelector('#btn-submit > button').classList.add('link-btn');
+  }
+}
+
+function validateButton(e) {
+  if (email.value.match(regx)) {
+    document.querySelector('#error').classList.add('hidden');
+  } else {
+    document.querySelector('#error').classList.remove('hidden');
+    e.preventDefault();
+  }
+}
+
 function loadWorks() {
   let topCard = '';
   let cardGroup = '';
@@ -121,6 +146,7 @@ function loadWorks() {
   }
   document.getElementById('top-card').innerHTML = topCard;
   document.getElementById('card-group').innerHTML = cardGroup;
+  validField();
 }
 
 function displayMenu() {
@@ -154,19 +180,10 @@ function closeModal() {
   document.querySelector('#card-modal').classList.toggle('hidden');
 }
 
-const email = document.getElementById('email');
-
-document.querySelector('#email').addEventListener('keyup', (e) => {
-  const regx = /[A-Z]/g;
-  if (regx.test(email.value)) {
-    e.preventDefault();
-    window.alert(`${email.value} es texto inválido`); // eslint-disable-line
-    document.querySelector('#email').classList.add('invalid');
-  } else {
-    document.querySelector('#email').classList.remove('invalid');
-  }
-});
-
+form.addEventListener('submit', validateButton);
+email.addEventListener('keyup', validField);
+fullName.addEventListener('keyup', validField);
+message.addEventListener('keyup', validField);
 document.querySelector('body').addEventListener('load', loadWorks);
 document.querySelector('#menu-button').addEventListener('click', displayMenu);
 document.querySelector('#wide-menu > div > button').addEventListener('click', displayMenu);

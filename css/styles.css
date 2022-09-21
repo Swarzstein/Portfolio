@@ -303,6 +303,25 @@ hr {
   transition: ease-in, 0.3s, ease-out, 1s;
 }
 
+.disabled-btn {
+  padding: 12px;
+  height: 48px;
+  background-color: #f4f1f0;
+  border-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  /* Theme 2 / Neutral 11 */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #5b5957;
+}
+
 .link-btn-2 {
   padding: 12px;
   gap: 10px;
@@ -683,6 +702,19 @@ hr {
 
 .invalid {
   border-color: #8e0000;
+}
+
+#error {
+  position: absolute;
+  text-align: center;
+  background-color: #eb9a9a;
+  border: 1px solid #8e0000;
+  border-radius: 0.5em;
+  margin: 12px -116px;
+  padding: 1%;
+  color: #8e0000;
+  font-style: italic;
+  font-size: larger;
 }
 
 @media only screen and (min-width: 768px) {
