@@ -78,6 +78,31 @@ const projects = {
   },
 };
 
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const fullName = document.querySelector('#name');
+const message = document.querySelector('#message');
+const regx = /^[a-z0-9]+[a-z0-9._]+@[a-z0-9-.]+\.[a-z0-9]+$/gm;
+
+function validField() {
+  if (!email.value.match(regx) || email.value === '' || fullName.value === '' || message.value === '') {
+    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
+    document.querySelector('#btn-submit > button').classList.remove('link-btn');
+  } else {
+    document.querySelector('#btn-submit > button').classList.remove('disabled-btn');
+    document.querySelector('#btn-submit > button').classList.add('link-btn');
+  }
+}
+
+function validateButton(e) {
+  if (email.value.match(regx)) {
+    document.querySelector('#error').classList.add('hidden');
+  } else {
+    document.querySelector('#error').classList.remove('hidden');
+    e.preventDefault();
+  }
+}
+
 function loadWorks() {
   let topCard = '';
   let cardGroup = '';
@@ -155,42 +180,8 @@ function closeModal() {
   document.querySelector('#card-modal').classList.toggle('hidden');
 }
 
-const form = document.querySelector('#contact-form');
-const email = document.querySelector('#email');
-const fullName = document.querySelector('#name');
-const message = document.querySelector('#message');
-const regx = /^[a-z0-9]+[a-z0-9._]+@[a-z0-9-.]+\.[a-z0-9]+$/gm;
-  
-function validate(e) {
-  if (email.value.match(regx)) {
-    document.querySelector('#error').classList.add('hidden');
-  } else {
-    document.querySelector('#error').classList.remove('hidden');
-    e.preventDefault();
-  }
-}
-
-function validField() {
-  if (!email.value.match(regx) || email.value == "" || fullName.value == "" || message.value == "") {
-    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
-    document.querySelector('#btn-submit > button').classList.remove('link-btn');
-  /*} else if (email.value == "") {
-    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
-    document.querySelector('#btn-submit > button').classList.remove('link-btn');
-  } else if (fullName.value == "") {
-    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
-    document.querySelector('#btn-submit > button').classList.remove('link-btn');
-  } else if (message.value == "") {
-    document.querySelector('#btn-submit > button').classList.add('disabled-btn');
-    document.querySelector('#btn-submit > button').classList.remove('link-btn');*/
-  } else {
-  document.querySelector('#btn-submit > button').classList.remove('disabled-btn');
-  document.querySelector('#btn-submit > button').classList.add('link-btn');
- }
-}
-
-form.addEventListener('submit', validate);
-email.addEventListener('keyup', validField)
+form.addEventListener('submit', validateButton);
+email.addEventListener('keyup', validField);
 fullName.addEventListener('keyup', validField);
 message.addEventListener('keyup', validField);
 document.querySelector('body').addEventListener('load', loadWorks);
