@@ -709,6 +709,19 @@ color: #5B5957;
   border-color: #8e0000;
 }
 
+#error {
+  position: absolute;
+  text-align: center;
+  background-color: #eb9a9a;
+  border: 1px solid #8e0000;
+  border-radius: 0.5em;
+  margin: 12px -116px;
+  padding: 1%;
+  color: #8e0000;
+  font-style: italic;
+  font-size: larger;
+}
+
 @media only screen and (min-width: 768px) {
   a {
     cursor: pointer;
