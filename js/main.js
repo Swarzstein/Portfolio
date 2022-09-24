@@ -89,10 +89,9 @@ const fullName = document.querySelector('#name');
 const message = document.querySelector('#message');
 const submitBtn = document.querySelector('#btn-submit > button');
 const regx = /^[a-z0-9]+[a-z0-9._]+@[a-z0-9-.]+\.[a-z0-9]+$/gm;
-let storage = JSON.parse(localStorage.getItem('formInfo'));
+const storage = JSON.parse(localStorage.getItem('formInfo'));
 
 function setStorageData() {
-  console.log('setting storage data');
   formData.nameData = fullName.value;
   formData.emailData = email.value;
   formData.messageData = message.value;
@@ -204,7 +203,6 @@ function openURL(url) {
 function closeModal() {
   document.querySelector('#card-modal').classList.toggle('hidden');
 }
-
 
 document.querySelector('#contact-form').addEventListener('submit', validateButton);
 email.addEventListener('keyup', validField);
