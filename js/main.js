@@ -78,13 +78,35 @@ const projects = {
   },
 };
 
+let formData = {
+  nameData: '',
+  emailData: '',
+  messageData: '',
+};
+
 const email = document.querySelector('#email');
 const fullName = document.querySelector('#name');
 const message = document.querySelector('#message');
 const submitBtn = document.querySelector('#btn-submit > button');
 const regx = /^[a-z0-9]+[a-z0-9._]+@[a-z0-9-.]+\.[a-z0-9]+$/gm;
+const storage = JSON.parse(localStorage.getItem('formInfo'));
+
+function setStorageData() {
+  formData.nameData = fullName.value;
+  formData.emailData = email.value;
+  formData.messageData = message.value;
+  localStorage.setItem('formInfo', JSON.stringify(formData));
+}
+
+function getStorageData() {
+  formData = storage;
+  document.getElementById('name').value = formData.nameData;
+  document.getElementById('email').value = formData.emailData;
+  document.getElementById('message').value = formData.messageData;
+}
 
 function validField() {
+  setStorageData();
   if (!email.value.match(regx) || email.value === '' || fullName.value === '' || message.value === '') {
     submitBtn.classList.add('disabled-btn');
     submitBtn.classList.remove('link-btn');
@@ -147,6 +169,7 @@ function loadWorks() {
   }
   document.getElementById('top-card').innerHTML = topCard;
   document.getElementById('card-group').innerHTML = cardGroup;
+  if (storage !== null) getStorageData();
   validField();
 }
 
