@@ -169,7 +169,7 @@ function loadWorks() {
   }
   document.getElementById('top-card').innerHTML = topCard;
   document.getElementById('card-group').innerHTML = cardGroup;
-  getStorageData();
+  if (storage !== null) getStorageData();
   validField();
 }
 
